@@ -1,0 +1,52 @@
+/*
+Theme Name:     Themedd-child
+Theme URI:      
+Description:    Themedd child theme.
+Author:         Me
+Author URI:     
+Template:       themedd
+Version:        0.1.0
+*/
+body {
+  overflow-x:hidden;
+}
+.home .page-header {
+  display:none;
+}
+#main.site-main {
+  padding-top:0;
+}
+.hero {
+ background-image: linear-gradient( 170deg, #EA5455 30%, #ca0047 100%);
+ flex-direction:column;
+  text-align: center;
+  min-height:25vw;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 100vw; 
+}
+.hero h2,  .entry-content .hero h3  {
+  color:#fff;
+  margin-top:0;
+}
+.hero > .wp-block-column {
+  flex-grow:0
+}
+
+p.button > a {
+  color:#fff;
+}
+p.button.outline {
+  border:solid 1px;
+  background-color: transparent;
+}
+.hero .boutons {
+  max-width:400px;
+  text-align: center;
+  display:flex;
+  margin: auto;
+  padding-top:30px;
+}

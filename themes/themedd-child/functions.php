@@ -20,3 +20,9 @@ function themedd_parent_theme_enqueue_styles() {
 	);
 
 }
+
+apply_filters( 'themedd_copyright', '<p>' . sprintf( __( 'Copyright &copy; %s %s', 'themedd' ), date( 'Y' ), get_bloginfo( 'name' ) ) . '</p>' );
+add_filter('themedd_copyright', 'kasutan_copyright', 10,1);
+function kasutan_copyright($texte) {
+	return '<p>&copy; <a href="https://kasutan.pro" target="_blank">Kasutan</a> '.date('Y').'</p>';
+} 

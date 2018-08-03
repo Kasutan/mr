@@ -9,6 +9,10 @@ Version:        0.1.0
 */
 body {
   overflow-x:hidden;
+  --vert: #24b47e;
+  --rouge:#ca0047;
+  --gris:#eef0f3;
+
 }
 header .site-title {
   font-size:1.5rem;
@@ -29,13 +33,13 @@ header #site-header-secondary-menu {
   padding:0;
 }
 .entry-content h2 {
-  color:#ca0047;
+  color:var(--rouge);
 }
 .entry-content h2 + h3 {
   margin-top:0;
 }
 .hero {
- background-image: linear-gradient( 170deg, #EA5455 30%, #ca0047 100%);
+ background-image: linear-gradient( 170deg, #EA5455 30%, var(--rouge) 100%);
  flex-direction:column;
   text-align: center;
   min-height:20vw;
@@ -115,7 +119,7 @@ p.button.outline {
 }
 
 .achat {
-  border: solid 1px #eef0f3;
+  border: solid 1px var(--gris);
   padding:40px 20px;
 }
 .achat img {
@@ -145,16 +149,23 @@ p.button.outline {
 }
 
 .faq, .reassurance {
-  background-color:#eef0f3;
+  background-color:var(--gris);
   padding:40px 20px 0;
 }
 
-.faq {
+.faq-titre {
+  background-color:var(--gris);
   margin-top:40px;
+  margin-bottom: 0;
+  padding:60px 20px 0;
 }
-.faq .wp-block-column p {
+
+h2.faq-titre  {
+  color:var(--vert);
+}
+.faq .wp-block-column .question {
   background-color:#fff;
-  margin:10px;
+  margin:20px;
   padding:10px;
   text-align:center;
 }
@@ -164,7 +175,7 @@ p.button.outline {
 }
 
 .home .contact {
-   background-color:#eef0f3;
+   background-color:var(--gris);
   padding:40px 20px 0;
   text-align:center;
 }
@@ -173,9 +184,21 @@ p.button.outline {
 }
 #home-contact-form:target {
   display:block;
-  padding-top:20px;
+  margin: auto ;
+  max-width:700px;
+  padding:40px 20px;
 }
-
+#home-contact-form .form-group {
+  text-align: left;
+}
+#home-contact-form label {
+  padding-left:5px;
+}
+#home-contact-form .button {
+  max-width:200px;
+  display:block;
+  margin:auto;
+}
 .widget_media_image {
   text-align: center;
 }

@@ -18,6 +18,8 @@ function themedd_parent_theme_enqueue_styles() {
 		get_stylesheet_directory_uri() . '/style.css',
 		array( 'themedd-style' )
 	);
+	wp_register_script('themedd-child-scripts',get_stylesheet_directory_uri() . '/scripts.js',array('jquery'),'1.4.1',true );
+	wp_enqueue_script('themedd-child-scripts');
 
 }
 

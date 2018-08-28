@@ -181,17 +181,20 @@ h2.faq-titre  {
 }
 #home-contact-form {
   display:none;
-}
-#home-contact-form:target {
-  display:block;
   margin: auto ;
   max-width:700px;
   padding:40px 20px;
+}
+
+#home-contact-form:target {
+  display:block;
+  
 }
 #home-contact-form .form-group {
   text-align: left;
 }
 #home-contact-form label {
+  font-weight:normal;
   padding-left:5px;
 }
 #home-contact-form .button {
@@ -209,5 +212,36 @@ footer .site-info {
   padding-top:0;
 }
 
+section.doc-search {
+  background-color:var(--gris);
+  padding:50px 10px;
+  text-align:center;
 
+}
 
+.post-type-archive-doc .dashicons-media-text{
+  color:var(--rouge);
+  font-size:inherit;
+  top:5px;
+  position:relative;
+  padding-right:40px;
+}
+
+.grille {
+  display:flex;
+  justify-content:center;
+  align-items:stretch;
+  flex-wrap:wrap;
+}
+.grille > div {
+  flex-basis:100%;
+  margin:30px 0;
+}
+@media (min-width:768px) {
+  .grille > div {
+  flex-basis:500px;
+    flex-grow:0;
+  margin:30px 10px;
+    
+}
+}

@@ -190,14 +190,14 @@ h2.faq-titre  {
   display:block;
   
 }
-#home-contact-form .form-group {
+.caldera-grid .form-group {
   text-align: left;
 }
-#home-contact-form label {
+.caldera-grid .caldera_forms_form label {
   font-weight:normal;
   padding-left:5px;
 }
-#home-contact-form .button {
+.caldera-grid .button {
   max-width:200px;
   display:block;
   margin:auto;
@@ -260,4 +260,54 @@ section.doc-search {
 }
 .navCart-quantity, .navCart-cartTotalSeparator {
   display:none;
+}
+
+.search-form {
+  max-width:600px;
+  margin:30px auto;
+}
+
+.search-form input.search-field,
+.search-form button.search-submit{
+  background: #fff;
+  height: 60px;
+}
+
+
+.search-form button.search-submit {
+  margin-left:10px;
+}
+
+.support-contact-form {
+  background-color:var(--gris);
+  padding:40px 20px;
+  text-align:center;
+  width: 100%;
+}
+.support-contact-form form {
+  margin: auto ;
+  max-width:700px;
+}
+
+.logos-paiement {
+  padding:30px;
+  max-width:400px;
+}
+.reassurance a {
+  color:rgb(105, 105, 105);
+}
+.logo-secure {
+  max-width:120px;
+  padding:10px;
+}
+.reassurance .wp-block-column {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#edd-purchase-button {
+  max-width:400px;
+  display:block;
+  margin:0 auto 30px;
 }

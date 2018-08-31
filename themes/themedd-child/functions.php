@@ -28,3 +28,5 @@ add_filter('themedd_copyright', 'kasutan_copyright', 10,1);
 function kasutan_copyright($texte) {
 	return '<p>&copy; <a href="https://kasutan.pro" target="_blank">Kasutan</a> '.date('Y').'</p>';
 } 
+
+load_theme_textdomain( 'themedd', get_stylesheet_directory() . '/languages' );

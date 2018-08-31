@@ -26,6 +26,11 @@ get_header(); ?>
 					endforeach;
 				}				
 			?>
+			<section class="support-contact-form">
+			<?php echo Caldera_Forms::render_form( 'CF5b88127bca073' );
+			//TODO : tester la langue et afficher un formulaire différent si besoin
+			?>
+			</section>
 		</main>
 	</div>
 

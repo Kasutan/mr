@@ -1,3 +1,7 @@
 gulpfile.js
 package-lock.json
 node_modules/*
+plugins/k-custom-block/node_modules/
+wp-config.php
+.vscode/settings.json
+plugins/k-custom-blocks/package.json

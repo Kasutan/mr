@@ -39,10 +39,11 @@ header #site-header-secondary-menu {
   margin-top:0;
 }
 .hero {
- background-image: linear-gradient( 170deg, #EA5455 30%, var(--rouge) 100%);
+  background-color: #ca0047;
+ /* background-image: linear-gradient( 170deg, #EA5455 30%, #BB2A4B 100%);*/
  flex-direction:column;
   text-align: center;
-  min-height:20vw;
+  min-height:25vw;
   justify-content: center;
   align-items:center;
   position: relative;
@@ -75,10 +76,28 @@ p.button.outline {
   margin: auto;
   padding-top:30px;
 }
+.boutons-centres {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+@media screen and (max-width:500px) {
+  .boutons-centres {
+    flex-direction: column;
+  }
+}
+.boutons-centres > p {
+  flex-basis: 45%;
+  margin-top:30px;
+  
+}
 .gains {
   padding-top:50px;
 }
 
+.gains .wp-block-column:first-of-type {
+  padding:0 10px
+}
 
 .gains .wp-block-column:last-of-type  {
 
@@ -165,9 +184,12 @@ h2.faq-titre  {
 }
 .faq .wp-block-column .question {
   background-color:#fff;
-  margin:20px;
-  padding:10px;
-  text-align:center;
+  margin:20px 0;
+  padding:20px;
+  text-align:left;
+}
+.faq .wp-block-column .question .titre {
+  text-align: center;
 }
 .reassurance {
   font-size:80%;
@@ -276,6 +298,21 @@ section.doc-search {
 
 .search-form button.search-submit {
   margin-left:10px;
+  
+}
+
+.doc-faq {
+  padding:40px 20px;
+  width:100%;
+}
+
+.doc-faq h2 {
+  text-align:center;
+}
+
+.doc-faq details {
+  max-width:1000px;
+  margin:auto;
 }
 
 .support-contact-form {

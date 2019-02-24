@@ -26,8 +26,19 @@ get_header(); ?>
 					endforeach;
 				}				
 			?>
+			<section class="doc-faq">
+			<?php 
+				$faq=get_post(1445);
+				if( $faq && 'publish'==$faq->post_status) {
+					echo sprintf('<h2><span class="dashicons dashicons-media-text"></span>%s</h2>', $faq->post_title);
+					echo sprintf('<div>%s</div>', $faq->post_content);
+				}
+			?>
+			</section>
 			<section class="support-contact-form">
-			<?php echo Caldera_Forms::render_form( 'CF5b88127bca073' );
+			<?php if(class_exists('Caldera_Forms')) {
+				echo Caldera_Forms::render_form( 'CF5b88127bca073' );
+			}
 			//TODO : tester la langue et afficher un formulaire différent si besoin
 			?>
 			</section>

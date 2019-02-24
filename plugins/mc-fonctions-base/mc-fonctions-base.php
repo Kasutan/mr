@@ -1,13 +1,14 @@
 <?php
 /*Plugin Name: MC Fonctions de base
 Description: Améliorations à mettre en place sur tous les sites
-Version: 1.3
+Version: 1.4
 License: GPLv2
 Author: Magalie Castaing
 */
 
 /*
 Changelog
+1.4 - 06/12/2018 - Désactiver les mises à jour automatiques MAJEURES de WordPress
 1.3 - Modif code pour mise à jour auto du thème
 1.2 - 29/05/2018 - Affiche l'ID de l'objet dans l'admin
 1.1 - 18/05/2018 - Mise à jour automatique de WordPress et du thème TwentySeventeen
@@ -80,7 +81,7 @@ add_shortcode( 'adresse-email', 'mc_adresse_email' );
 add_filter( 'auto_update_plugin', '__return_true' );
 
 add_filter( 'allow_minor_auto_core_updates', '__return_true' );         // Enable minor updates
-add_filter( 'allow_major_auto_core_updates', '__return_true' );         // Enable major updates
+add_filter( 'allow_major_auto_core_updates', '__return_false' );         // Enable major updates
 function auto_update_specific_themes ( $update, $item ) {
     // Mettre à jour automatiquement les thèmes sauf le thème lapeyre
     if ( $item->slug == 'lapeyre') {

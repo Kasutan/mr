@@ -348,3 +348,25 @@ section.doc-search {
   display:block;
   margin:0 auto 30px;
 }
+
+.titre-temoignages {
+border : solid 2px var(--rouge);
+border-bottom:none;
+  margin-bottom:0;
+  padding-top:30px;
+  padding-bottom:30px;
+}
+
+.temoignages {
+  border : solid 2px var(--rouge);
+  border-top:none;
+  padding:20px;
+}
+
+.temoignages blockquote {
+  border-left:none;
+  margin-left:0;
+}
+.temoignages cite {
+  text-align: right;
+}
